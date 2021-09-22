@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { INavbarProps } from '../../interfaces/Navbar/navbarprops';
+import { INavbarProps } from '../../interfaces/Navbar/navbar.props';
 import Navbar from '../Navbar';
 
 // const props: INavbarProps = {
