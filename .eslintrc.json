@@ -1,13 +1,42 @@
 {
   "extends": [
+    "eslint:recommended",
     "airbnb",
-    "next/core-web-vitals"
+    "airbnb-typescript",
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended"
   ],
-  "rules":  {
-    "react/jsx-filename-extension": 
-      [
-        2, 
-        { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
-      ]
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "react/jsx-filename-extension": [
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    // Indent with 4 spaces
+    "indent": [
+      "error",
+      4
+    ],
+    // Indent JSX with 4 spaces
+    "react/jsx-indent": [
+      "error",
+      4
+    ],
+    // Indent props with 4 spaces
+    "react/jsx-indent-props": [
+      "error",
+      4
+    ]
   }
 }

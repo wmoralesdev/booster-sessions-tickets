@@ -1,9 +1,11 @@
+import React from 'react';
 import type { NextPage } from 'next';
+import Layout from '../src/components/Layout';
 
 const Home: NextPage = () => (
-  <div>
+  <Layout>
     Juan
-  </div>
+  </Layout>
 );
 
 export default Home;
