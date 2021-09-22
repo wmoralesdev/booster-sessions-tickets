@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { INavbarProps } from '../../interfaces/Navbar/navbar.props';
 import Navbar from '../Navbar';
 
 // const props: INavbarProps = {
@@ -10,17 +9,17 @@ import Navbar from '../Navbar';
 //   ]
 // };
 
-  const items = [
+const items = [
     { text: 'Home', to: '/' },
     { text: 'Home', to: '/' },
     { text: 'Home', to: '/' },
-  ]
+];
 
 const Layout: FC = ({ children }) => (
-  <main className="w-screen h-screen bg-primary text-white">
-    <Navbar items={ items }/>
-    { children }
-  </main>
+    <main className="w-screen h-screen bg-primary text-white">
+        <Navbar items={items} />
+        { children }
+    </main>
 );
 
 export default Layout;

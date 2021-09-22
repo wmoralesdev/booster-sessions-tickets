@@ -9,11 +9,17 @@
     "plugin:import/warnings",
     "plugin:jsx-a11y/recommended"
   ],
+  "settings": {
+    "next": {
+      "rootDir": "/"
+    }
+  },
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "rules": {
     "react/jsx-filename-extension": [
+      2,
       {
         "extensions": [
           ".js",
@@ -23,6 +29,7 @@
         ]
       }
     ],
+    
     // Indent with 4 spaces
     "indent": [
       "error",
@@ -37,6 +44,11 @@
     "react/jsx-indent-props": [
       "error",
       4
-    ]
+    ],
+
+    "@typescript-eslint/indent": [0],
+
+    "jsx-a11y/no-static-element-interactions": [0],
+    "jsx-a11y/click-events-have-key-events": [0]
   }
 }

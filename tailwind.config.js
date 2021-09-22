@@ -6,8 +6,12 @@ module.exports = {
       'sans': ['Montserrat', 'sans-serif']
     },
     extend: {
+      fontSize: {
+        '2xs': '.65rem',
+      },
       colors: {
-        primary: "#233DF9"
+        primary: "#233DF9",
+        secondary: "#ED198E"
       },
     },
   },

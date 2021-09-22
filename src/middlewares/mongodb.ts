@@ -1,4 +1,4 @@
-import mongoose, { ConnectOptions } from 'mongoose';
+import mongoose from 'mongoose';
 
 const connectDB = (handler: any) => async (req: any, res: any) => {
     if (mongoose.connections[0].readyState) {
@@ -9,9 +9,9 @@ const connectDB = (handler: any) => async (req: any, res: any) => {
         useUnifiedTopology: true,
         useFindAndModify: false,
         useCreateIndex: true,
-        useNewUrlParser: true
+        useNewUrlParser: true,
     });
-    
+
     return handler(req, res);
 };
 
