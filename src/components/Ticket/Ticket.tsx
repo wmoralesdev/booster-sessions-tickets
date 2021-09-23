@@ -161,7 +161,7 @@ const Ticket: FC<any> = ({ user, bg }) => {
                             >
                                 <Elaniin />
                                 <Barcode
-                                    value={username[0]}
+                                    value={username[1]}
                                     options={
                                         {
                                             height: 28,
