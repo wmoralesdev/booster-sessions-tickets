@@ -16,7 +16,7 @@ const items = [
 ];
 
 const Layout: FC = ({ children }) => (
-    <main className="w-screen h-screen bg-primary text-white">
+    <main className="w-screentext-white">
         <Navbar items={items} />
         { children }
     </main>

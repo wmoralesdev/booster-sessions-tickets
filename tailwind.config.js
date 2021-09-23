@@ -6,8 +6,12 @@ module.exports = {
       'sans': ['Montserrat', 'sans-serif']
     },
     extend: {
+      height: {
+        '102': '28rem',
+      },
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
+        'wiggle-short': 'wiggle 1s ease-in-out 1'
       },
       fontSize: {
         '2xs': '.65rem',
@@ -27,6 +31,8 @@ module.exports = {
   variants: {
     extend: {
       animation: ['hover', 'focus'],
+      height: ['hover'],
+      width: ['hover']
     },
   },
   plugins: [],
