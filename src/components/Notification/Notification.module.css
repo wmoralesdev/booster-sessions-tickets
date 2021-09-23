@@ -1,0 +1,32 @@
+.notification {
+    position: fixed;
+    bottom: 50px;
+    /* left: 50%; */
+    margin-left: -10rem;
+    z-index: 10;
+    left: -1000px;
+}
+
+.notification.show {
+    left: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .notification {
+        left: 4000px;
+    }
+
+    .notification.show {
+        left: 75%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .notification {
+        bottom: 40px;
+    }
+    
+    .notification.show {
+        left: 90%;
+    }
+}

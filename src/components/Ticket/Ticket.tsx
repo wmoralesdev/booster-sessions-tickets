@@ -3,11 +3,11 @@ import {
     faYoutube, faInstagram, faFacebook, faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import React, { FC } from 'react';
-import Elaniin from '../Icons/Elaniin/Elaniin';
+import Elaniin from '@components/icons/Elaniin/Elaniin';
 
 const PulseTicket: FC = () => (
     <div>
-        <div className="w-64 h-96 border-2 border-white rounded-xl shadow-lg flex flex-col bg-white text-primary select-none">
+        <div className="w-64 h-96 border-2 border-white rounded-xl shadow-lg flex flex-col bg-white text-primary select-none hover:animate-wiggle">
             <div className="w-20 h-2 border-2 border-primary rounded-lg mx-auto my-4 bg-primary" />
             <div className="w-full h-full flex flex-col justify-between items-center space-y-4">
                 <div className="flex flex-row items-center space-x-3">
@@ -47,7 +47,7 @@ const Ticket: FC<any> = ({ user }) => {
     return (
         !user ? <PulseTicket />
             : (
-                <div className="w-64 h-96 border-2 border-white rounded-xl shadow-lg flex flex-col bg-white text-primary select-none">
+                <div className="w-64 h-96 border-2 border-white rounded-xl shadow-lg flex flex-col bg-white text-primary select-none hover:animate-wiggle">
                     <div className="w-20 h-2 border-2 border-primary rounded-lg mx-auto my-4 bg-primary" />
                     <div className="w-full h-full flex flex-col justify-between items-center space-y-2">
                         <div className="space-y-6">

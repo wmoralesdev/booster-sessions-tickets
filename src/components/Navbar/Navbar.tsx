@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { INavbarProps } from '../../interfaces/Navbar/navbar.props';
+import { INavbarProps } from '@interfaces/Navbar/navbar.props';
 import styles from './Navbar.module.css';
 
 const Navbar: FC<INavbarProps> = () => {

@@ -6,6 +6,9 @@ module.exports = {
       'sans': ['Montserrat', 'sans-serif']
     },
     extend: {
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+      },
       fontSize: {
         '2xs': '.65rem',
       },
@@ -13,6 +16,12 @@ module.exports = {
         primary: "#233DF9",
         secondary: "#ED198E"
       },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-1deg)' },
+          '50%': { transform: 'rotate(1deg)' },
+        }
+      }
     },
   },
   variants: {
